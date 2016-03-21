@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* YouTube iFrame API multiple videos stylesheet
+   v1.0 | 20151102
+   License: moonspam (http://iluku.net/)
+*/
+
+html,
+body{height:100%;font-family:tahoma, 'NanumBarunGothic', dotum, sans-serif}
+body{background-color:#000}
+.mov_box{position:relative;width:100%;height:100%;overflow:hidden;cursor:pointer}
+.mov_box .yt_wrap{position:absolute;left:0;right:0;top:0;bottom:0;z-index:-99}
+.mov_box .yt_box{position:absolute;left:50%;top:50%;width:1280px;height:720px}
+
+.mov_box p{display:table;width:100%;height:100%}
+.mov_box p span{display:table-cell;font-size:28px;color:#fff;text-shadow:1px 1px 10px #000;text-align:center;vertical-align:middle}

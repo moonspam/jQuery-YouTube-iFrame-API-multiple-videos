@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>YouTube iFrame API multiple videos</title>
+<meta name="description" content="jQuery plugin that you can create multiple videos using youtube player api">
+<meta name="keywords" content="jQuery, Youtube, background, multiple, video, html, css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/ytmultiple.css">
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://www.youtube.com/player_api"></script>
+</head>
+
+<body>
+
+<div class="mov_box">
+	<p><span>Click to pause/play</span></p>
+	<!-- YouTube position -->
+	<div class="yt_wrap">
+		<div id="player1" class="yt_box"></div>
+	</div>
+</div>
+<div class="mov_box">
+	<p><span>Click to pause/play</span></p>
+	<!-- YouTube position -->
+	<div class="yt_wrap">
+		<div id="player2" class="yt_box"></div>
+	</div>
+</div>
+<div class="mov_box">
+	<p><span>Click to pause/play</span></p>
+	<!-- YouTube position -->
+	<div class="yt_wrap">
+		<div id="player3" class="yt_box"></div>
+	</div>
+</div>
+
+<script>
+// YouTube ID
+var ytPlayList = [{id: "player1", VideoId: "pDtYVo4D-6k"},{id: "player2", VideoId: "AkyqTgm12BY"},{id: "player3", VideoId: "5lW9SFhh9Dk"}];
+
+// click event(optional)
+$(document).ready(function() {
+	$('.mov_box').click(function() {
+		ytTogglePlay();
+	});
+});
+</script>
+<script src="js/ytmultiple.js"></script>
+</body>
+</html>

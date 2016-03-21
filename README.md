@@ -8,4 +8,4 @@ jQuery plugin that you can create multiple videos using youtube player api
 - 전체 일시정지, 전체 재생 함수 제공
 
 ### Demo
-준비 중
+http://iluku.net/ytmultiple/
