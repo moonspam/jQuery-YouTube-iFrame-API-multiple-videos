@@ -28,7 +28,7 @@ function createPlayer(ytInfo) {
 
 function onPlayerReady(event) {
 	event.target.getPlaybackQuality('default');
-	event.target.setVolume(0);
+	event.target.mute();
 	event.target.playVideo();
 }
 function onPlayerStateChange(event) {
